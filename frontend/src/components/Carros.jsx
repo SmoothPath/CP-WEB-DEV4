@@ -25,15 +25,11 @@ function Carros() {
         }
     }, [dados]);
 
-
-
-
-
     return (
         <>
             <div>
                 <header>
-                    <h1><img src="./src/assets/LOGOSMOOTH.png" alt="Logo da equipe SmoothPath"></img></h1>
+                    <h1><img src="./public/images/LOGOSMOOTH.png" alt="Logo da equipe SmoothPath"></img></h1>
                     <nav>
                         <ul>
                             <li><a href="">Carros</a></li>
