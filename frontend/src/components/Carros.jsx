@@ -3,27 +3,17 @@ import { useEffect, useState } from "react";
 function Carros() {
 
     //Vai pegar a imagem/legenda atual e mudá-l
-    const [dados, setDados] = useState({ imagens: [], legendas: [] });
-
-    //Valor inicial(index da img) e função que vai alterá-la, começa com 0
-    const [imagemAtual, setImagemAtual] = useState(0);
+    const [dados, setDados] = useState({ url: "", legenda: ""});
 
     useEffect(() => {
+        const intervalo = setInterval(() => {
         fetch("http://localhost:3001/carros")
             .then((res) => res.json())
             .then((data) => setDados(data));
-    }, []);
-
-    useEffect(() => {
-        if (dados.imagens.length > 0) {
-
-            const intervalo = setInterval(() => {
-                setImagemAtual((anterior) => (anterior + 1) % dados.imagens.length);
-            }, 3000);
+    }, 3000);
 
             return () => clearInterval(intervalo);
-        }
-    }, [dados]);
+        }, []);
 
     return (
         <>
@@ -42,9 +32,9 @@ function Carros() {
 
                 {/* Seção onde serão mostradas as imagens dos carros */}
                 <section className="apresentacacao">
-                    {dados.imagens.length > 0 && (
-                    <>  <img src={dados.imagens[imagemAtual]} alt="Imagem - Carro Elétrico" />
-                    <p id="legenda">{dados.legendas[imagemAtual]}</p>
+                    {dados.url && (
+                    <>  <img src={dados.url} alt="Imagem - Carro Elétrico" />
+                    <p id="legenda">{dados.legendas}</p>
                     </>    
                 )}
                 </section>
