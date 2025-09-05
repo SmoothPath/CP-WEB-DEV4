@@ -12,10 +12,12 @@ function App() {
 
       {/* conteúdo da página */}
       <main>
-        <section id="contato"><Contato /></section>
-        <section id="sobre"><Sobre /></section>
+        
         <section id="carros"><Carros /></section>
+        <section id="sobre"><Sobre /></section>
+        <section id="contato"><Contato /></section>
         <section id="lojas"><Lojas /></section>
+
       </main>
     </>
   );

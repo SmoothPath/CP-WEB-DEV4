@@ -1,20 +1,5 @@
-<<<<<<< HEAD
-function Navbar() {
-    <header>
-        <h1><img src="./public/images/LOGOSMOOTH.png" alt="Logo da equipe SmoothPath"></img></h1>
-        <nav>
-            <ul>
-                <li><a href="">Carros</a></li>
-                <li><a href="">Lojas</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-=======
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navbar() {
   return (
@@ -25,7 +10,7 @@ function Navbar() {
           <a className="navbar-brand fw-bold d-flex align-items-center" href="#topo">
             <img
               src="/images/LOGOSMOOTH.png"
-              alt="Logo SmoothPath"
+              alt="Logo da equipe SmoothPath"
               width="40"
               height="40"
               className="me-2"
@@ -41,7 +26,7 @@ function Navbar() {
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Alternar navegação"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -67,7 +52,6 @@ function Navbar() {
       </nav>
     </header>
   );
->>>>>>> 0c0cb89 (ajuste de header e responsividade)
 }
 
 export default Navbar;
