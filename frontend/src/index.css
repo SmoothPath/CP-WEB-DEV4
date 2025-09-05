@@ -122,3 +122,26 @@ footer {
     background-color: #e1e6ff;
   }
 }
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  flex: 1; /* ocupa o espaço disponível e empurra o footer para baixo */
+  width: 100%;
+}
+footer {
+  font-size: 0.85em;
+  color: #888;
+  background-color: #111; /* opcional */
+  padding: 20px;
+  text-align: center;
+}

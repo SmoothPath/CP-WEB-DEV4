@@ -29,9 +29,7 @@ function Carros() {
                 )}
                 </section>
 
-                <footer>
-                    &copy copyright 2025 - Todos direitos reservados
-                </footer>
+              
             </div>
         </>
     )

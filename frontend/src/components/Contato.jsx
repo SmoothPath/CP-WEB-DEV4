@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../Contato.css";
 
-
 function Contato() {
   const [formData, setFormData] = useState({
     nome: "",
@@ -9,15 +8,30 @@ function Contato() {
     mensagem: ""
   });
 
+  const [resposta, setResposta] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Obrigado pelo contato, ${formData.nome}!`);
-    setFormData({ nome: "", email: "", mensagem: "" });
+
+    try {
+      const resp = await fetch("http://localhost:3001/api/contato", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await resp.json();
+      setResposta(data.mensagem || "Mensagem enviada!");
+      setFormData({ nome: "", email: "", mensagem: "" });
+    } catch (error) {
+      console.error("Erro ao enviar contato:", error);
+      setResposta("Erro ao enviar. Tente novamente.");
+    }
   };
 
   return (
@@ -60,6 +74,8 @@ function Contato() {
 
         <button type="submit" className="botao">Enviar</button>
       </form>
+
+      {resposta && <p className="resposta">{resposta}</p>}
     </div>
   );
 }
