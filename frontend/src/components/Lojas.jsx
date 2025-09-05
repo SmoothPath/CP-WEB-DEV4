@@ -1,6 +1,7 @@
 import React from "react";
 
 function Lojas() {
+<<<<<<< HEAD
     return (
         <>
             {/* Navbar */}
@@ -110,3 +111,63 @@ function Lojas() {
 
 }
 export default Lojas;
+=======
+  return (
+    <section id="lojas" className="py-5">
+      <div className="container">
+        {/* Hero simples (se quiser manter o carousel, ok; aqui vai uma imagem destaque) */}
+        <div className="row justify-content-center mb-4">
+          <div className="col-12">
+            <img
+              src="/images/carro2.jpg"
+              alt="Destaque"
+              className="img-fluid w-100"
+              style={{ objectFit: "cover", maxHeight: 420 }}
+            />
+          </div>
+        </div>
+
+        <h2 className="text-center mb-4">Nossas Lojas</h2>
+
+        <div className="row g-4">
+          <div className="col-12 col-md-6 col-lg-4">
+            <div className="card h-100">
+              <div className="card-body">
+                <h5 className="card-title">São Paulo</h5>
+                <p className="card-text">Av. Principal, 123 – Centro</p>
+                <button className="btn btn-outline-primary" type="button">Ver no mapa</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 col-md-6 col-lg-4">
+            <div className="card h-100">
+              <div className="card-body">
+                <h5 className="card-title">Rio de Janeiro</h5>
+                <p className="card-text">Rua das Laranjeiras, 45 – Zona Sul</p>
+                <button className="btn btn-outline-primary" type="button">Ver no mapa</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 col-md-6 col-lg-4">
+            <div className="card h-100">
+              <div className="card-body">
+                <h5 className="card-title">Curitiba</h5>
+                <p className="card-text">Alameda Verde, 500 – Batel</p>
+                <button className="btn btn-outline-primary" type="button">Ver no mapa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer className="text-center text-secondary mt-5">
+          © 2025 SmoothPath Electric Cars
+        </footer>
+      </div>
+    </section>
+  );
+}
+
+export default Lojas;
+>>>>>>> 0c0cb89 (ajuste de header e responsividade)
