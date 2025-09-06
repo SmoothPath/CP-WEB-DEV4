@@ -1,42 +1,48 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* ===== Global (âncora + navbar fixa) ===== */
+html { scroll-behavior: smooth; }
+:root { --navbar-h: 64px; }            /* ajuste conforme a altura da sua navbar */
+body { padding-top: var(--navbar-h); }
+section { scroll-margin-top: calc(var(--navbar-h) + 16px); }
+
+/* Banner/hero responsivo e maior */
+.section-hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh; /* ocupa toda a altura da tela no desktop */
+  display: block;
 }
 
+/* Em telas menores, reduz a altura para não ficar exagerado */
+@media (max-width: 768px) {
+  .section-hero img {
+    height: 60vh; /* 60% da altura da tela no mobile */
+  }
+}
+
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+}
+
+/* (Opcional) Mantemos estilos do template caso ainda use em algum lugar */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.logo:hover { filter: drop-shadow(0 0 2em #646cffaa); }
+.logo.react:hover { filter: drop-shadow(0 0 2em #61dafbaa); }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
-
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  a:nth-of-type(2) .logo { animation: logo-spin infinite 20s linear; }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+.card { padding: 2em; }
+.read-the-docs { color: #888; }
