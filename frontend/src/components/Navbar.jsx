@@ -11,8 +11,8 @@ function Navbar() {
             <img
               src="/images/LOGOSMOOTH.png"
               alt="Logo da equipe SmoothPath"
-              width="40"
-              height="40"
+              width="100"   // aumentei de 40 para 100
+              height="100"  // aumentei de 40 para 100
               className="me-2"
             />
             SmoothPath
