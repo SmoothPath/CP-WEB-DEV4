@@ -34,9 +34,10 @@ function Contato() {
   };
 
   return (
-    <section id="contato" className="py-5">
+    <section id="contato" className="py-0">
       <div className="container">
-        <div className="row justify-content-center">
+        {/* Aqui adicionamos a classe contato-row */}
+        <div className="row contato-row">
           <div className="col-12 col-lg-8">
             <div className="contato-container">
               <h1 className="titulo">Entre em Contato</h1>

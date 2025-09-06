@@ -4,9 +4,20 @@ html { scroll-behavior: smooth; }
 body { padding-top: var(--navbar-h); }
 section { scroll-margin-top: calc(var(--navbar-h) + 16px); }
 
-/* Banner/hero em telas grandes */
-.section-hero img { object-fit: cover; max-height: 480px; display: block; width: 100%; }
+/* Banner/hero responsivo e maior */
+.section-hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh; /* ocupa toda a altura da tela no desktop */
+  display: block;
+}
 
+/* Em telas menores, reduz a altura para não ficar exagerado */
+@media (max-width: 768px) {
+  .section-hero img {
+    height: 60vh; /* 60% da altura da tela no mobile */
+  }
+}
 
 #root {
   max-width: none;

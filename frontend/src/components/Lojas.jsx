@@ -3,8 +3,6 @@ import React from "react";
 function Lojas() {
   return (
     <>
-     
-
       {/* Hero / SlideShow */}
       <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
@@ -36,45 +34,6 @@ function Lojas() {
         <button className="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
           <span className="carousel-control-next-icon"></span>
         </button>
-      </div>
-
-      {/* Catálogo de Carros */}
-      <div className="container mt-5">
-        <h2 className="text-center mb-4">Nossos Modelos</h2>
-        <div className="row">
-          <div className="col-md-4 mb-4">
-            <div className="card h-100">
-              <img src="/images/carro1.jpg" className="card-img-top" alt="Carro elétrico 1" />
-              <div className="card-body">
-                <h5 className="card-title">SmoothPath X1</h5>
-                <p className="card-text">Preço: R$ 220.000</p>
-                <a href="#" className="btn btn-primary">Saiba Mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 mb-4">
-            <div className="card h-100">
-              <img src="/images/carro2.jpg" className="card-img-top" alt="Carro elétrico 2" />
-              <div className="card-body">
-                <h5 className="card-title">SmoothPath SUV-E</h5>
-                <p className="card-text">Preço: R$ 280.000</p>
-                <a href="#" className="btn btn-primary">Saiba Mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 mb-4">
-            <div className="card h-100">
-              <img src="/images/carro3.jpg" className="card-img-top" alt="Carro elétrico 3" />
-              <div className="card-body">
-                <h5 className="card-title">SmoothPath CityGo</h5>
-                <p className="card-text">Preço: R$ 150.000</p>
-                <a href="#" className="btn btn-primary">Saiba Mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Lojas físicas */}

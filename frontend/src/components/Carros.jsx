@@ -38,7 +38,6 @@ function Carros() {
         </div>
 
         {/* Cards dos modelos */}
-        <h2 className="text-center mb-4">Nossos Modelos</h2>
         <div className="row g-4">
           <div className="col-12 col-md-6 col-lg-4">
             <div className="card h-100">
@@ -64,7 +63,7 @@ function Carros() {
 
           <div className="col-12 col-md-6 col-lg-4">
             <div className="card h-100">
-              <img src="/public/imagens/kovaEv.avif" className="card-img-top img-fluid" alt="Carro elétrico 3" />
+              <img src="/images/carro3.jpg" className="card-img-top img-fluid" alt="Carro elétrico 3" />
               <div className="card-body">
                 <h5 className="card-title">SmoothPath CityGo</h5>
                 <p className="card-text">Preço: R$ 150.000</p>
