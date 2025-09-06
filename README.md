@@ -15,6 +15,7 @@ Ele apresenta as seguintes seções:
 - Gustavo Torres Caldeira - 561613
 - Lucas Oliveira Santos - 563617
 - Mariana Silva do Egito Moreira - 562544
+- 1ESPF - Engenharia de Software
 ---
 
 ## 🌐 Deploy
