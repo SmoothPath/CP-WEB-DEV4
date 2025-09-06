@@ -21,7 +21,7 @@ Ele apresenta as seguintes seções:
 
 🔗[Github]( https://github.com/SmoothPath/CP-WEB-DEV4.git)
 
-🔗 [Acesse o projeto Vercel aqui](COLOQUE_O_LINK_DA_VERCEL_AQUI)
+🔗 [Acesse o projeto Vercel aqui](https://cp-web-dev-4front.vercel.app/)
 
 ---
 
